@@ -1,8 +1,26 @@
 aid: impossible-foods
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/impossible-foods.png
 name: Impossible Foods
-description: 'Impossible Foods is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Impossible Foods is a Redwood City, California food-technology company that develops
+  plant-based substitutes for meat, including Impossible Beef, Sausage, Chicken, Meatballs, and Pork.
+  Founded in 2011 by Patrick O. Brown, the company engineers its products around heme (soy leghemoglobin)
+  to replicate the taste and texture of animal meat while reducing the environmental footprint of food
+  production. Its products are distributed through grocery retail and tens of thousands of restaurants
+  across the United States and international markets including Canada, Australia, New Zealand, Hong Kong,
+  Singapore, the United Arab Emirates and the United Kingdom. Impossible Foods is a private, venture-backed
+  company surfaced in the API Evangelist network as a GV (Google Ventures) portfolio company; it does not
+  currently publish a public developer API.'
 url: https://raw.githubusercontent.com/api-evangelist/impossible-foods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Frontier Tech
+- Food
+- Food Technology
+- Plant-Based
+- Alternative Protein
+- Consumer Packaged Goods
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/impossible-foods-domain-security.yml
 - type: Website
   url: https://impossiblefoods.com/
+- type: Support
+  url: https://faq.impossiblefoods.com/
+- type: TermsOfService
+  url: https://impossiblefoods.com/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
